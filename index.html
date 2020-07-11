@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INSEO</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -27,7 +28,8 @@
         </div>
         <div class="navigation" role="navigation">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand brand1" href="#"><img src="img/logo.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -40,7 +42,7 @@
                             <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
                             <li class="nav-item"><a class="nav-link" href="#">Кейсы</a></li>
                             <li class="nav-item"><a class="nav-link" href="#">Результаты</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Заказать</a></li>
+                            <li class="nav-item"><a class="nav-link popupReq" href="#">Заказать</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -333,7 +335,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#" class="button">Посмотреть еще</a>
+                <a href="#" class="resultBtn">Посмотреть еще</a>
             </div>
         </section>
 
@@ -457,12 +459,22 @@
                         <input type="text" id="siteAdd" placeholder="www.website.ru">
                     </div>
                     <div class="formItem">
-                        <label for="region">Выберите регион*</label>
-                        <input type="text" id="region" placeholder="Москва">
+                        <label for="regions">Выберите регион*</label>
+                        <select id="regions" name="regions">
+                            <option value="moscow" selected>Москва</option>
+                            <option value="tashkent">Ташкент</option>
+                            <option value="sankt-petersburg">Санкт-Петербург</option>
+                            <option value="saratov">Саратов</option>
+                        </select>
                     </div>
                     <div class="formItem">
                         <label for="siteType">Тип сайта*</label>
-                        <input type="text" id="siteType" placeholder="Интернет-магазин">
+                        <select id="siteType" name="siteType">
+                            <option value="online-store" selected>Интернет-магазин</option>
+                            <option value="corporate">Корпоративный-сайт</option>
+                            <option value="storefront">Сайт-витрина</option>
+                            <option value="promotional">Промо-сайт</option>
+                        </select>
                     </div>
                     <div class="formItem">
                         <label for="mail">Электронный адрес*</label>
@@ -491,11 +503,41 @@
                 <a href="#"><i class="fas fa-envelope"></i>email@gmail.com</a>
                 <a href="#"><i class="fas fa-phone-alt"></i>8 (370) 545 33 24</a>
             </div>
-            <img src="img/footerLogo.png" alt="footerLogo">
+            <a href="#"><img src="img/footerLogo.png" alt="footerLogo"></a>
             <div class="copyRight">© UrbanSEO - продвижение сайтов 2020</div>
         </div>
     </footer>
 
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="popupContent">
+            <div class="closeBtn"><img src="img/cross_base.png" alt="cross_base"></div>
+            <h2 class="title">Заказать</h2>
+            <form class="popupForm">
+                <div class="formItem">
+                    <label for="popName">Ваше имя*</label>
+                    <input type="text" id="popName" placeholder="Николай">
+                </div>
+                <div class="formItem">
+                    <label for="popSiteAdd">Адрес сайта*</label>
+                    <input type="text" id="popSiteAdd" placeholder="www.website.ru">
+                </div>
+                <div class="formItem">
+                    <label for="popMail">Электронный адрес*</label>
+                    <input type="email" id="popMail" placeholder="email@gmail.com">
+                </div>
+                <div class="formItem">
+                    <label for="popPhoneNum">Телефон*</label>
+                    <input type="number" id="popPhoneNum" placeholder="+998 90 999 88 99">
+                </div>
+                <div class="formArea">
+                    <label for="popKeyword">Список ключевых слов*</label>
+                    <textarea name="keyword" id="popKeyword" rows="4" placeholder="Ключевые слова"></textarea>
+                </div>
+                <button type="submit" class="popFormBtn">Оставить заявку</button>
+            </form>
+        </div>
+    </div>
 
     <!-- JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -507,6 +549,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="js/main.js"></script>
 
