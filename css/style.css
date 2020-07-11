@@ -38,8 +38,14 @@ a:hover {
   line-height: 18px;
   color: #acacac;
 }
+.headerTop a:hover {
+  color: #ffffff;
+}
 .navigation {
   background-color: #ffffff;
+}
+.brand1 {
+  display: none;
 }
 .navbar,
 .navbar-brand {
@@ -58,6 +64,10 @@ a:hover {
   text-transform: uppercase;
   color: #000000;
 }
+.nav-link:hover {
+  color: blue;
+}
+/* hero */
 .hero {
   background-image: url(../img/headerBg.png);
   background-repeat: no-repeat;
@@ -109,6 +119,11 @@ a:hover {
   padding: 14px 51px;
   background-color: #363636;
   border-radius: 5px;
+}
+.heroBtn:hover {
+  background-color: transparent;
+  color: #ffffff;
+  box-shadow: 0 0 5px 3px #363636;
 }
 .mac {
   position: absolute;
@@ -404,6 +419,9 @@ a:hover {
 img[alt="xls"] {
   margin-right: 15px;
 }
+.listItem span:hover {
+  color: blue;
+}
 .listItem span {
   font-weight: bold;
   font-size: 18px;
@@ -412,7 +430,7 @@ img[alt="xls"] {
   color: #000000;
   display: inline-block;
 }
-.button {
+.resultBtn {
   font-weight: bold;
   font-size: 14px;
   line-height: 22px;
@@ -422,6 +440,11 @@ img[alt="xls"] {
   padding: 14px 53px;
   background-color: #dd3e33;
   border-radius: 5px;
+}
+.resultBtn:hover {
+  background-color: transparent;
+  color: #000000;
+  box-shadow: 0 0 10px 2px #dd3e33;
 }
 /* principles */
 .principles {
@@ -601,6 +624,11 @@ img[alt="xls"] {
   display: inline-block;
   margin-top: 20px;
 }
+.priceBtn:hover {
+  color: #363636;
+  background-color: transparent;
+  box-shadow: 0 0 10px 2px #363636;
+}
 .tarifs {
   padding: 19px 575px;
   text-align: center;
@@ -678,6 +706,25 @@ input {
   width: 100%;
   padding: 7px 5px 8px 16px;
 }
+select {
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  padding: 8px 5px 9px 12px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 textarea {
   width: 100%;
   padding: 7px 5px 8px 16px;
@@ -695,6 +742,11 @@ textarea {
   padding: 14px 0;
   width: 100%;
   border: none;
+}
+.formBtn:hover {
+  color: #000000;
+  background-color: transparent;
+  box-shadow: 0 0 3px 1px #d33a2f;
 }
 .lan {
   position: absolute;
@@ -737,6 +789,9 @@ textarea {
   text-align: right;
   color: #acacac;
 }
+.footerLinks a:hover {
+  color: #ffffff;
+}
 .footerLinks a:first-child {
   margin-right: 35px;
 }
@@ -750,4 +805,67 @@ textarea {
   text-align: right;
   letter-spacing: 0.28px;
   color: #acacac;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+.popup{
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 13px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  max-width: 570px;
+}
+.popupContent{
+  text-align: center;
+  padding: 58px 41px 79px 40px;
+  position: relative;
+}
+.closeBtn{
+  position: absolute;
+  top: 24px;
+  right: 34px;
+  cursor: pointer;
+}
+.popupForm {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.popFormBtn {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #d33a2f;
+  border-radius: 5px;
+  padding: 14px 0;
+  width: 100%;
+  border: none;
+}
+.popFormBtn:hover {
+  color: #000000;
+  background-color: transparent;
+  box-shadow: 0 0 3px 1px #d33a2f;
+}
+.overflow{
+  overflow: hidden;
 }
