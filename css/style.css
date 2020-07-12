@@ -19,7 +19,7 @@ a:hover {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 999;
+  z-index: 99;
   box-shadow: 0 0 5px 2px rgba(222, 68, 54);
 }
 .marginTop {
@@ -27,7 +27,8 @@ a:hover {
 }
 /* header */
 .header {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   position: relative;
 }
 .headerTop {
@@ -851,7 +852,7 @@ textarea {
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0px 2px 13px 5px rgba(0, 0, 0, 0.2);
-  z-index: 10;
+  z-index: 999;
   max-width: 570px;
 }
 .popupContent {
