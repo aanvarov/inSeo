@@ -27,8 +27,8 @@ a:hover {
 }
 /* header */
 .header {
-  height: 100vh;
-  max-height: 100vh;
+  /* height: 100vh; */
+  /* max-height: 100vh; */
   position: relative;
 }
 .headerTop {
@@ -1794,8 +1794,9 @@ textarea {
     flex-wrap: wrap;
   }
   .virusList {
-    width: 60%;
+    width: 67%;
     margin-bottom: 15px;
+    margin-left: 35px;
   }
   .virusContent img {
     width: 80%;
