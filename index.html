@@ -12,6 +12,8 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -29,19 +31,22 @@
         <div class="navigation" role="navigation">
             <div class="container">
                 <nav class="navbar navbar-expand-md">
+                    <a href="#" class="mobilePhone"><i class="fas fa-phone-alt"></i>8 (370) 545 33 24</a>
                     <a class="navbar-brand brand1" href="#"><img src="img/logo.png" alt="logo"></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="togglerIcon"></span>
+                        <span class="togglerIcon"></span>
+                        <span class="togglerIcon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item"><a class="nav-link" href="#">Услуги</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Цены</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Преимущества</a></li>
-                            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
+                            <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#websiting">Преимущества</a></li>
+                            <a class="navbar-brand brand2" href="#"><img src="img/logo.png" alt="logo"></a>
                             <li class="nav-item"><a class="nav-link" href="#">Кейсы</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Результаты</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#results">Результаты</a></li>
                             <li class="nav-item"><a class="nav-link popupReq" href="#">Заказать</a></li>
                         </ul>
                     </div>
@@ -54,7 +59,7 @@
                 <h1 class="heroTitle">Продвижение сайтов <br><span>в поисковых системах</span></h1>
                 <p class="heroPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tortor dictum
                     diam, iaculis. Fringilla proin suspendisse odio ipsum duis velit.</p>
-                <a href="#" class="heroBtn">Заказать</a>
+                <a href="#order" class="heroBtn">Заказать</a>
                 <img src="img/notepad.png" alt="notepad" class="notepad">
                 <img src="img/spiralNB.png" alt="spiralNB" class="spiralNB">
                 <img src="img/appleMouse.png" alt="appleMouse" class="appleMouse">
@@ -72,7 +77,7 @@
     </header>
 
     <main>
-        <section class="websiting">
+        <section class="websiting" id="websiting">
             <div class="container">
                 <h2 class="title">РАСКРУТКА САЙТОВ</h2>
                 <p class="para">Наша главная задача – способствовать росту Вашего бизнеса. Используя SEO-инструменты мы
@@ -241,7 +246,7 @@
         <section class="steps">
             <div class="container">
                 <h2 class="title">ШАГИ К УСПЕХУ</h2>
-                <div class="row justify-content-between">
+                <div class="row">
                     <div class="col-lg-4">
                         <div class="step">
                             <div class="stepTop">
@@ -298,7 +303,7 @@
             </div>
         </section>
 
-        <section class="results">
+        <section class="results" id="results">
             <div class="container">
                 <h2 class="title">Наши результаты</h2>
                 <div class="resultList">
@@ -406,7 +411,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section class="prices" id="prices">
             <div class="container">
                 <h2 class="title">ЦЕНЫ</h2>
                 <p class="para">Вы можете выбрать наиболее подходящий тариф под цель продвижения Вашего бизнеса. Мы
@@ -446,7 +451,7 @@
             </div>
         </section>
 
-        <section class="order">
+        <section class="order" id="order">
             <div class="container">
                 <h2 class="title">Форма заказа</h2>
                 <form class="form">
@@ -507,6 +512,15 @@
             <div class="copyRight">© UrbanSEO - продвижение сайтов 2020</div>
         </div>
     </footer>
+    <button id="back-to-top">
+		<svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 492.002 492.002" style="enable-background:new 0 0 492.002 492.002;" xml:space="preserve">
+			<path d="M484.136,328.473L264.988,109.329c-5.064-5.064-11.816-7.844-19.172-7.844c-7.208,0-13.964,2.78-19.02,7.844
+				L7.852,328.265C2.788,333.333,0,340.089,0,347.297c0,7.208,2.784,13.968,7.852,19.032l16.124,16.124
+				c5.064,5.064,11.824,7.86,19.032,7.86s13.964-2.796,19.032-7.86l183.852-183.852l184.056,184.064
+				c5.064,5.06,11.82,7.852,19.032,7.852c7.208,0,13.96-2.792,19.028-7.852l16.128-16.132
+				C494.624,356.041,494.624,338.965,484.136,328.473z"></path>
+		</svg>
+	</button>
 
     <div class="overlay"></div>
     <div class="popup">
@@ -551,6 +565,7 @@
         crossorigin="anonymous"></script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="slick/slick.min.js"></script>
 
     <script src="js/main.js"></script>
 
