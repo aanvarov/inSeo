@@ -1023,9 +1023,6 @@ textarea {
     width: 12%;
     bottom: -100px;
   }
-  .headerTop a {
-    font-size: 12px;
-  }
   .heroTitle {
     font-size: 45px;
     line-height: 50px;
@@ -1033,9 +1030,6 @@ textarea {
   .heroTitle span {
     font-size: 36px;
     line-height: 36px;
-  }
-  .nav-link {
-    font-size: 14px;
   }
   .heroPara {
     font-size: 18px;
