@@ -1411,6 +1411,9 @@ textarea {
   }
 }
 @media (max-width: 768px) {
+  .steps {
+    overflow: hidden;
+  }
   .popup {
     width: 380px;
   }
@@ -1433,8 +1436,8 @@ textarea {
   .coffeCup {
     width: 120px;
     height: auto;
-    left: 640px;
-    top: 150px;
+    left: 605px;
+    top: 188px;
   }
   .hero {
     padding: 150px 0;
@@ -1563,6 +1566,9 @@ textarea {
   }
 }
 @media (max-width: 767px) {
+  .navbar-nav {
+    align-items: flex-end;
+  }
   .brand1 {
     width: 105px;
     display: block;
@@ -1653,7 +1659,80 @@ textarea {
     font-size: 12px;
   }
 }
+@media (max-width: 667px) {
+  .advantages {
+    margin: 30px 0px;
+  }
+  .cardList {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .card {
+    width: 80%;
+  }
+  .steps .row {
+    margin-top: 30px;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .steps .col-lg-4 {
+    margin-bottom: 0;
+    max-width: 80%;
+  }
+  .steps .container {
+    min-width: 0;
+    width: 100%;
+    padding: 0 15px;
+  }
+  .steps .col-lg-4:first-child .stepTop {
+    flex-direction: row;
+    text-align: left;
+  }
+  .steps .col-lg-4:first-child .para {
+    text-align: left;
+  }
+  .steps .row {
+    margin-top: 30px;
+    margin-bottom: 150px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .cupAndMac {
+    bottom: -150px;
+    left: calc(50% - 150px);
+  }
+  .headerTop .container {
+    padding: 0 15px;
+  }
+  .hero img {
+    display: none;
+  }
+  .navigation .container,
+  .footer .container {
+    padding: 0 20px;
+  }
+  img[alt="mega-topу"] {
+    width: 400px;
+  }
+  .form {
+    max-width: 450px;
+  }
+}
 @media (max-width: 425px) {
+  img[alt="footerLogo"] {
+    width: 100px;
+  }
+  .footerLinks i {
+    margin-right: 5px;
+  }
+  .copyRight,
+  .footerLinks {
+    width: 37%;
+  }
+  .navbar-nav {
+    padding-right: 45px;
+  }
   .closeBtn {
     top: 15px;
     right: 15px;
@@ -1800,6 +1879,7 @@ textarea {
   }
   .virusContent img {
     width: 80%;
+    height: auto;
   }
   .ipad {
     display: none;
@@ -1841,6 +1921,9 @@ textarea {
   }
 }
 @media (max-width: 375px) {
+  .navbar-nav {
+    padding-right: 35px;
+  }
   .tarifs {
     padding: 15px 5px;
   }
@@ -1849,9 +1932,6 @@ textarea {
   }
   .footer .container {
     padding: 0 3px;
-  }
-  .footerLinks i {
-    margin-right: 5px;
   }
   .footerLinks {
     align-items: center;
@@ -1868,15 +1948,20 @@ textarea {
     display: inline-block;
     margin: auto;
   }
-  .copyRight,
-  .footerLinks {
-    width: 37%;
-  }
   .gallery img {
     width: 50%;
   }
   .steps .col-lg-4 {
     margin-bottom: 0;
     max-width: 95%;
+  }
+}
+@media (max-width: 320px) {
+  .navbar-nav {
+    padding-right: 25px;
+  }
+  .virusList {
+    width: 80%;
+    margin-left: 30px;
   }
 }
